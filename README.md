@@ -6,17 +6,15 @@ This project utilizes data from a DVD rental database to inform future marketing
 
 ## Features
 
-- **Custom Data Transformation**: Designed a user-defined function to enhance data readability by combining fields, ensuring clean and insightful reporting.  
-- **Granular Data Organization**: Created a **detailed table** for actor and film performance metrics and a **summary table** for aggregated insights, including the top three highest-grossing actors.
-- **Automation and Optimization**: Incorporated stored procedures, triggers, and Common Table Expressions (CTEs) to automate data aggregation and maintain table freshness.  
-- **PostgreSQL Implementation**: Utilized advanced PostgreSQL techniques to extract, transform, and organize data from multiple related tables in the DVD rental database.
+- **Data Organization**: Created a **detailed table** for actor and film performance metrics and a **summary table** for aggregated insights, including the top three highest-grossing actors.
+- **PostgreSQL Automation**: Utilized stored procedures, triggers, and Common Table Expressions (CTEs) to automate data aggregation and ensure table freshness.  
+- **Custom Transformations**: Designed user-defined functions to enhance data readability, streamlining reporting and analysis.  
 
 ## What I Learned
 
-- **PostgreSQL Techniques**: Strengthened expertise in using stored procedures, triggers, and CTEs to optimize workflows and automate data processes.  
-- **Data Transformation**: Applied advanced SQL skills to merge and transform data from multiple tables into actionable insights for business reporting.  
-- **Structured Data Design**: Gained experience in designing reports with increasing levels of granularity to cater to both detailed analysis and high-level summaries.  
-- **Automation and Scalability**: Learned to create self-updating reports using triggers and to streamline processes with stored procedures, preparing for more complex database projects. 
+- **Advanced PostgreSQL**: Strengthened skills in stored procedures, triggers, CTEs, and user-defined functions to optimize and automate workflows.  
+- **Data Insights**: Gained experience in transforming raw data into structured insights for both granular analysis and high-level summaries.  
+- **Automation**: Developed techniques for creating self-updating tables, preparing for scalable and dynamic database projects.  
 
 ## Example Outputs
 
@@ -30,3 +28,16 @@ The **detailed table** contains granular data about actors and their movies, inc
 | 102      | Walter Torn    | 118.59      | 268          | Early Home         | 24.95      |
 | 92       | Kirsten Akroyd | 117.66      | 103          | Bucket Brotherhood | 24.95      |
 | 136      | Ed Mansfield   | 115.68      | 933          | Vampire Whale      | 24.95      |
+|181       | Matthew Carrey | 112.61      | 403          | Harry Idaho        | 24.95      |
+
+> **Note:** The full detailed table contains 200 rows of data.
+
+### Summary Table
+
+The **summary table** highlights the top three actors based on their total performance value. Below is the complete table:
+
+| actor_rank | actor_name     | best_film_title    |
+|------------|----------------|--------------------|
+| 1          | Gina Degeneres | Dogma Family       |
+| 2          | Walter Torn    | Early Home         |
+| 3          | Kirsten Akroyd | Bucket Brotherhood |
